@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+
+<head>
+<title>DICOM Web Viewer</title>
+<meta charset="UTF-8">
+<meta name="description" content="DICOM Web Viewer (DWV) static version">
+<meta name="keywords" content="DICOM,HTML5,JavaScript,medical,imaging,DWV">
+<link type="text/css" rel="stylesheet" href="./css/style.css">
+<link type="text/css" rel="stylesheet" href="./ext/jquery-ui/themes/excite-bike/jquery-ui.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+<style type="text/css" >
+  .ui-widget-content { background-color: #2c3e50; background-image: url();}
+</style>
+<!-- Third party (dwv) -->
+<script type="text/javascript" src="./ext/modernizr/modernizr.js"></script>
+<script type="text/javascript" src="./ext/i18next/i18next.min.js"></script>
+<script type="text/javascript" src="./ext/i18next/i18nextXHRBackend.min.js"></script>
+<script type="text/javascript" src="./ext/i18next/i18nextBrowserLanguageDetector.min.js"></script>
+<script type="text/javascript" src="./ext/konva/konva.min.js"></script>
+<script type="text/javascript" src="./ext/magic-wand/magic-wand.js"></script>
+<script type="text/javascript" src="./ext/jszip/jszip.min.js"></script>
+<!-- Third party (viewer) -->
+<script type="text/javascript" src="./ext/jquery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="./ext/jquery-ui/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="./ext/flot/jquery.flot.min.js"></script>
+<!-- decoders -->
+<script type="text/javascript" src="./decoders/pdfjs/jpx.js"></script>
+<script type="text/javascript" src="./decoders/pdfjs/util.js"></script>
+<script type="text/javascript" src="./decoders/pdfjs/arithmetic_decoder.js"></script>
+<script type="text/javascript" src="./decoders/pdfjs/jpg.js"></script>
+<script type="text/javascript" src="./decoders/rii-mango/lossless-min.js"></script>
+<!-- Local -->
+<script type="text/javascript" src="./dwv-0.21.0.min.js"></script>
+<!-- Launch the app -->
+<script type="text/javascript" src="appgui.js"></script>
+<script type="text/javascript" src="applauncher.js"></script>
+</head>
+
+<body>
+
+<!-- DWV -->
+<div id="dwv">
+
+<div id="pageHeader">
+
+<!-- Title -->
+<h1>DWV <span class="dwv-version"></span></h1>
+
+<!-- Toolbar -->
+<div class="toolbar"></div>
+
+</div><!-- /pageHeader -->
+
+<div id="pageMain">
+
+<!-- Open file -->
+<div class="openData" title="File">
+<div class="loaderlist"></div>
+<div id="progressbar"></div>
+</div>
+
+<!-- Toolbox -->
+<div class="toolList" title="Toolbox"></div>
+
+<!-- History -->
+<div class="history" title="History"></div>
+
+<!-- Tags -->
+<div class="tags" title="Tags"></div>
+
+<!-- DrawList -->
+<div class="drawList" title="Draw list"></div>
+
+<!-- Help -->
+<div class="help" title="Help"></div>
+
+<!-- Layer Container -->
+<div class="layerDialog" title="Image">
+<div class="dropBox"></div>
+<div class="layerContainer">
+<canvas class="imageLayer">Only for HTML5 compatible browsers...</canvas>
+<div class="drawDiv"></div>
+<div class="infoLayer">
+<div class="infotl"></div>
+<div class="infotc"></div>
+<div class="infotr"></div>
+<div class="infocl"></div>
+<div class="infocr"></div>
+<div class="infobl"></div>
+<div class="infobc"></div>
+<div class="infobr" style="bottom: 64px;"></div>
+<div class="plot"></div>
+</div><!-- /infoLayer -->
+</div><!-- /layerContainer -->
+</div><!-- /layerDialog -->
+
+</div><!-- /pageMain -->
+
+</div><!-- /dwv -->
+
+</body>
+</html>
