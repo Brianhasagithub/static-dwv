@@ -74,5 +74,4 @@ appgui.js
 ./decoders/rii-mango/lossless-min.js
 ./decoders/rii-mango/decode-jpegloss.js
 
-NETWORK:
-static-dwv/
+
