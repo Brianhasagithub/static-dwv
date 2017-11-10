@@ -13,9 +13,9 @@ function startApp() {
     myapp.init({
         "containerDivId": "dwv",
         "fitToWindow": true,
-        "gui": ["tool", "load", "help", "undo", "version", "tags", "drawList"],
+        "gui": ["tool", "load", "drawList"],
         "loaders": ["File", "Url"],
-        "tools": ["Scroll", "WindowLevel", "ZoomAndPan", "Draw", "Livewire", "Filter", "Floodfill"],
+        "tools": ["Scroll", "WindowLevel", "ZoomAndPan", "Draw"],
         "filters": ["Threshold", "Sharpen", "Sobel"],
         "shapes": ["Arrow", "Ruler", "Protractor", "Rectangle", "Roi", "Ellipse", "FreeHand"],
         "isMobile": false
